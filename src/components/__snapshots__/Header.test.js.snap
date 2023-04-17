@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders 1`] = `
+<div>
+  <div
+    class="header"
+  >
+    <nav>
+      <ul>
+        <li>
+          Home
+        </li>
+        <li>
+          Shopping Cart
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+`;
+
+exports[`Header component renders nav list 1`] = `
+<div>
+  <div
+    class="header"
+  >
+    <nav>
+      <ul>
+        <li>
+          Home
+        </li>
+        <li>
+          Shopping Cart
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+`;
