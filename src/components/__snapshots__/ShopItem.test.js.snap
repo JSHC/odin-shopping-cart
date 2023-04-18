@@ -31,6 +31,9 @@ exports[`ShopItem component renders 1`] = `
       <button>
         Dec
       </button>
+      <button>
+        Add to Cart
+      </button>
     </div>
   </div>
 </div>

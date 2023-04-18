@@ -6,6 +6,48 @@ exports[`Home component renders 1`] = `
     <h1>
       Home
     </h1>
+    <div
+      class="shop-items-container"
+    >
+      <div
+        class="shop-item"
+      >
+        <span
+          class="shop-item-name"
+        >
+          Item1
+        </span>
+        <span
+          class="shop-item-price"
+        >
+          10
+        </span>
+        <div
+          class="shop-item-controls"
+        >
+          <label
+            for="shop-item-quantity"
+          >
+            Quantity
+          </label>
+          <input
+            id="shop-item-quantity"
+            name="shop-item-quantity"
+            type="text"
+            value="0"
+          />
+          <button>
+            Inc
+          </button>
+          <button>
+            Dec
+          </button>
+          <button>
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
