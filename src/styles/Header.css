@@ -1,4 +1,16 @@
 .header {
     background-color: #222;
     grid-area: header;
+    color: #fff;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
 }
