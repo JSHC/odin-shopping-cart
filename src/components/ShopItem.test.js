@@ -78,4 +78,14 @@ describe('ShopItem component', () => {
         expect(parseInt(quantityInput.value)).not.toBe(-1);
         expect(parseInt(quantityInput.value)).not.toBeNaN();
     })
+
+    it('can click Add to Cart button', async () => {
+        const item1 = {id: 1, name: 'Item1', price: 10}
+        const user = userEvent.setup();
+        const addToCartMock = jest.fn();
+        render(<ShopItem {...item1} onAddToCart={addToCartMock}/>);
+        const addToCartButton = screen.getByRole('button', {name: 'Add to Cart'});
+        await user.click(addToCartButton);
+        expect(addToCartMock).toBeCalled();
+    })
 })
