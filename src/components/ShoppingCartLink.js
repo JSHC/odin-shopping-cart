@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom"
 import '../styles/ShoppingCartLink.css';
+import { FaShoppingCart } from 'react-icons/fa'
 
 const ShoppingCartLink = (props) => {
     return (
-        <div className="shopping-cart-link">
+        <div className="shopping-cart-link-container">
             <div className="cart-items-number">0</div>
-            <Link to='/shopping-cart'><div></div></Link>
+            <Link to='/shopping-cart'><FaShoppingCart /></Link>
         </div>
     )
 }
