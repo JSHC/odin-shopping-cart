@@ -40,6 +40,7 @@ const ShopItem = (props) => {
                 />
                 <button onClick={increaseQuantity}>Inc</button>
                 <button onClick={decreaseQuantity}>Dec</button>
+                <button onClick={props.onAddToCart}>Add to Cart</button>
             </div>
         </div>
     );
