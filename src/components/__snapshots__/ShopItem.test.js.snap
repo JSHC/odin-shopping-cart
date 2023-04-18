@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component renders 1`] = `
+<div>
+  <div>
+    <span
+      class="shop-item-name"
+    />
+    <span
+      class="shop-item-price"
+    />
+  </div>
+</div>
+`;
