@@ -5,10 +5,11 @@ const ShoppingCart = (props) => {
     return (
         <div>
             <h1>Shopping Cart</h1>
+            {cartItems && cartItems.length > 0 ? 
             <div className='shopping-cart-item-header'>
-                <p>Product</p>
-                <p>Quantity</p>
-                <p>Price</p>
+            <p>Product</p>
+            <p>Quantity</p>
+            <p>Price</p>
             
             {cartItems.map(item => {
                 return (
@@ -20,6 +21,8 @@ const ShoppingCart = (props) => {
                 )
             })}
             </div>
+            : null}
+            
         </div>
     );
 };
