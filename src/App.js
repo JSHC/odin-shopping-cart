@@ -12,17 +12,18 @@ function App() {
     if (item.quantity > 0) {
       const itemToUpdate = cartItems.find(x => x.id === item.id);
       if (itemToUpdate) {
-        const newItem = {...itemToUpdate, quantity: itemToUpdate.quantity + 1};
-        setCartItems(items => [...items.filter(x => x.id !== newItem.id), newItem]);
+        const newItem = {...itemToUpdate, quantity: itemToUpdate.quantity + item.quantity};
+        setCartItems([...cartItems.filter(x => x.id !== newItem.id), newItem]);
       } else {
-        setCartItems(items => [...items, item]);
+        setCartItems([item]);
       }
     }
   }
+
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
+        <Header {...{cartItems}}/>
         <Routes>
           <Route path='/' element={<Home onAddToCart={onAddToCart} />}/>
           <Route path='shopping-cart' element={<ShoppingCart />}/>
