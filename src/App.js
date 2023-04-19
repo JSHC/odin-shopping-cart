@@ -26,7 +26,7 @@ function App() {
         <Header {...{cartItems}}/>
         <Routes>
           <Route path='/' element={<Home onAddToCart={onAddToCart} />}/>
-          <Route path='shopping-cart' element={<ShoppingCart />}/>
+          <Route path='shopping-cart' element={<ShoppingCart cartItems={cartItems}/>}/>
         </Routes>
       </BrowserRouter>
     </div>
