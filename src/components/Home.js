@@ -6,7 +6,9 @@ const Home = (props) => {
     ]
 
     const onAddToCart = (item) => {
-        props.onAddToCart(item);
+        if (props.onAddToCart) {
+            props.onAddToCart(item);
+        }
     }
     return (
         <div>
