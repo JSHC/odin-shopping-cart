@@ -1,0 +1,18 @@
+.shopping-cart-item {
+    display: grid;
+    grid-column: span 3;
+    grid-template-columns: subgrid;
+}
+
+.shopping-cart-item-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+}
+
+.shopping-cart-item-header>p {
+    font-weight: bold;
+}
+
+.shopping-cart-item-header p {
+    margin: 0;
+}
