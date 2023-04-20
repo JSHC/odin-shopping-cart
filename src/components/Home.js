@@ -13,7 +13,7 @@ const Home = (props) => {
         }
     }
     return (
-        <div>
+        <div className="home-container">
             <h1>Home</h1>
             <div className="shop-items-container">
                 {shopItems.map(item => {
