@@ -1,8 +1,10 @@
 import ShopItem from "./ShopItem";
+import '../styles/Home.css';
 
 const Home = (props) => {
     const shopItems = [
-        {id: 1, name: 'Item1', price: 10}
+        {id: 1, name: 'Item1', price: 10},
+        {id: 2, name: 'Item2', price: 20}
     ]
 
     const onAddToCart = (item) => {
