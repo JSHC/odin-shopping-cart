@@ -20,7 +20,7 @@ const ShoppingCart = (props) => {
                         </div>
                     )
                 })}
-                <p>Sum: {cartItems.reduce((prev, curr) => prev + (curr.quantity * curr.price), 0)}</p>
+                <p className='shopping-cart-sum'>Sum: {cartItems.reduce((prev, curr) => prev + (curr.quantity * curr.price), 0)}</p>
             </div>
             : null
             }

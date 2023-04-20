@@ -16,3 +16,8 @@
 .shopping-cart-item-header p {
     margin: 0;
 }
+
+.shopping-cart-item-header .shopping-cart-sum {
+    grid-column: 3;
+    margin-top: 20px; 
+}
