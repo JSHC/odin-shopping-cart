@@ -15,7 +15,7 @@ function App() {
         const newItem = {...itemToUpdate, quantity: itemToUpdate.quantity + item.quantity};
         setCartItems([...cartItems.filter(x => x.id !== newItem.id), newItem]);
       } else {
-        setCartItems([item]);
+        setCartItems([...cartItems, item]);
       }
     }
   }
@@ -24,10 +24,12 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header {...{cartItems}}/>
+        <div className='main-content'>
         <Routes>
           <Route path='/' element={<Home onAddToCart={onAddToCart} />}/>
           <Route path='shopping-cart' element={<ShoppingCart cartItems={cartItems}/>}/>
         </Routes>
+        </div>
       </BrowserRouter>
     </div>
   );
