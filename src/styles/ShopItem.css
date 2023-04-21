@@ -1,3 +1,23 @@
 .shop-item {
     display: grid;
 }
+
+.shop-item-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.shop-item-quantity-label {
+    grid-row: 1;
+    grid-column: 1 / -1;
+}
+
+.add-to-cart-button {
+    grid-column: 1 / -1;
+}
+
+#shop-item-quantity {
+    padding: 1rem 0.6rem;
+    text-align: center;
+    font-size: 16px;
+}
