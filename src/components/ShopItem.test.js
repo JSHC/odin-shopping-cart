@@ -27,8 +27,8 @@ describe('ShopItem component', () => {
         const item1 = {id: 1, name: 'Item1', price: 10}
         const user = userEvent.setup();
         render(<ShopItem {...item1}/>);
-        const quantityIncButton = screen.getByRole('button', {name: 'Inc'});
-        const quantityDecButton = screen.getByRole('button', {name: 'Dec'});
+        const quantityIncButton = screen.getByRole('button', {name: 'increase-quantity'});
+        const quantityDecButton = screen.getByRole('button', {name: 'decrease-quantity'});
         const quantityInput = screen.getByLabelText("Quantity");
         expect(parseInt(quantityInput.value)).toBe(0);
         await user.click(quantityIncButton);
@@ -41,7 +41,7 @@ describe('ShopItem component', () => {
         const item1 = {id: 1, name: 'Item1', price: 10}
         const user = userEvent.setup();
         render(<ShopItem {...item1}/>);
-        const quantityDecButton = screen.getByRole('button', {name: 'Dec'});
+        const quantityDecButton = screen.getByRole('button', {name: 'decrease-quantity'});
         const quantityInput = screen.getByLabelText("Quantity");
         expect(parseInt(quantityInput.value)).toBe(0);
         await user.click(quantityDecButton);
