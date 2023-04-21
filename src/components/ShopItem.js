@@ -30,17 +30,22 @@ const ShopItem = (props) => {
             <span className="shop-item-price">{price}</span>
 
             <div className="shop-item-controls">
-                <label htmlFor="shop-item-quantity">Quantity</label>
+                <label htmlFor="shop-item-quantity" className="shop-item-quantity-label">Quantity</label>
+                <button onClick={decreaseQuantity} aria-label="decrease-quantity">-</button>
                 <input
                     type="text"
                     value={quantity}
                     onChange={updateQuantity}
                     name="shop-item-quantity"
                     id="shop-item-quantity"
+                    size={1}
                 />
-                <button onClick={increaseQuantity}>Inc</button>
-                <button onClick={decreaseQuantity}>Dec</button>
-                <button onClick={() => {props.onAddToCart({id, name, price, quantity})}}>Add to Cart</button>
+                <button onClick={increaseQuantity} aria-label="increase-quantity">+</button>
+                <button 
+                onClick={() => {props.onAddToCart({id, name, price, quantity})}}
+                className="add-to-cart-button">
+                    Add to Cart
+                </button>
             </div>
         </div>
     );
