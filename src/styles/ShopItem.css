@@ -1,8 +1,12 @@
 .shop-item {
     display: grid;
     grid-template-rows: 1fr auto auto auto;
-    padding: 1rem;
     border: 1px solid #ddd;
+}
+
+.shop-item div {
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .shop-item-image {
@@ -10,20 +14,22 @@
     height: 300px;
     background-size: cover;
     background-position: center center;
+    background-clip: content-box;
 }
 
-.shop-item-name {
+.shop-item-details {
     grid-row: 2;
 }
 
-.shop-item-price {
-    grid-row: 3;
+.shop-item-details>p {
+    margin: 0;
 }
 
 .shop-item-controls {
     grid-row: 4;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #ddd;
 }
 
 .shop-item-quantity-label {
@@ -38,6 +44,7 @@
     background-color: #fff;
     cursor: pointer;
     font-weight: bold;
+    margin-top: 1rem;
 }
 
 #shop-item-quantity {
