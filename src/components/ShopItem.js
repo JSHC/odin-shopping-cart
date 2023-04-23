@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles/ShopItem.css";
 const ShopItem = (props) => {
-    const { id, name, price } = props;
+    const { id, name, price, image } = props;
 
     const [quantity, setQuantity] = useState(0);
 
@@ -26,6 +26,10 @@ const ShopItem = (props) => {
     };
     return (
         <div className="shop-item">
+            {image && 
+            <div className="shop-item-image" style={{backgroundImage: `url(${image})`}}>
+            </div>
+            }
             <span className="shop-item-name">{name}</span>
             <span className="shop-item-price">{price}</span>
 
@@ -40,7 +44,7 @@ const ShopItem = (props) => {
                     id="shop-item-quantity"
                     size={1}
                 />
-                <button onClick={increaseQuantity} aria-label="increase-quantity">+</button>
+                <button onClick={increaseQuantity} aria-label="increaseu-quantity">+</button>
                 <button 
                 onClick={() => {props.onAddToCart({id, name, price, quantity})}}
                 className="add-to-cart-button">
