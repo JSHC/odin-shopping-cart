@@ -30,8 +30,10 @@ const ShopItem = (props) => {
             <div className="shop-item-image" style={{backgroundImage: `url(${image})`}}>
             </div>
             }
-            <span className="shop-item-name">{name}</span>
-            <span className="shop-item-price">{price}</span>
+            <div className="shop-item-details">
+            <p className="shop-item-name">{name}</p>
+            <p className="shop-item-price">{price}</p>
+            </div>
 
             <div className="shop-item-controls">
                 <button onClick={decreaseQuantity} aria-label="decrease-quantity">-</button>
@@ -41,9 +43,10 @@ const ShopItem = (props) => {
                     onChange={updateQuantity}
                     name="shop-item-quantity"
                     id="shop-item-quantity"
+                    aria-label="quantity"
                     size={1}
                 />
-                <button onClick={increaseQuantity} aria-label="increaseu-quantity">+</button>
+                <button onClick={increaseQuantity} aria-label="increase-quantity">+</button>
                 <button 
                 onClick={() => {props.onAddToCart({id, name, price, quantity})}}
                 className="add-to-cart-button">
