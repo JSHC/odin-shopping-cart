@@ -34,7 +34,6 @@ const ShopItem = (props) => {
             <span className="shop-item-price">{price}</span>
 
             <div className="shop-item-controls">
-                <label htmlFor="shop-item-quantity" className="shop-item-quantity-label">Quantity</label>
                 <button onClick={decreaseQuantity} aria-label="decrease-quantity">-</button>
                 <input
                     type="text"
