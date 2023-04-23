@@ -1,6 +1,8 @@
 .shop-item {
     display: grid;
     grid-template-rows: 1fr auto auto auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
 }
 
 .shop-item-image {
