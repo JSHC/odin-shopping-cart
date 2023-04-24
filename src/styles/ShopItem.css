@@ -25,6 +25,10 @@
     margin: 0;
 }
 
+.shop-item .shop-item-details {
+    padding-top: 0;
+}
+
 .shop-item-controls {
     grid-row: 4;
     display: grid;
@@ -35,6 +39,10 @@
 .shop-item-quantity-label {
     grid-row: 1;
     grid-column: 1 / -1;
+}
+
+.shop-item-price::before {
+    content: "$";
 }
 
 .add-to-cart-button {
