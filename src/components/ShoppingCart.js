@@ -1,7 +1,7 @@
 import '../styles/ShoppingCart.css';
 
 const ShoppingCart = (props) => {
-    const {cartItems} = props;
+    const {cartItems, onDeleteItem} = props;
     return (
         <div>
             <h1>Shopping Cart</h1>
@@ -17,6 +17,11 @@ const ShoppingCart = (props) => {
                             <p>{item.name}</p>
                             <p>{item.quantity}</p>
                             <p>{item.price}</p>
+                            <button 
+                            aria-label='delete-shopping-cart-item'
+                            onClick={() => {onDeleteItem(item)}}>
+                            X
+                            </button>
                         </div>
                     )
                 })}
