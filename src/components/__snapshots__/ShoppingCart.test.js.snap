@@ -6,6 +6,24 @@ exports[`ShoppingCart component renders 1`] = `
     <h1>
       Shopping Cart
     </h1>
+    <div
+      class="shopping-cart-item-header"
+    >
+      <p>
+        Product
+      </p>
+      <p>
+        Quantity
+      </p>
+      <p>
+        Price
+      </p>
+      <p
+        class="shopping-cart-empty-message"
+      >
+        You haven't added any items to the shopping cart.
+      </p>
+    </div>
   </div>
 </div>
 `;
