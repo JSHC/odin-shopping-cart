@@ -35,3 +35,7 @@
     margin-top: 2rem;
     font-weight: 500;
 }
+
+.shopping-cart-item-price::before, .shopping-cart-sum-amount:before {
+    content: "$";
+}
