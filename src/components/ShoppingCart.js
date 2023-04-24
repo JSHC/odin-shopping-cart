@@ -14,9 +14,9 @@ const ShoppingCart = (props) => {
                 {cartItems.map(item => {
                     return (
                         <div className="shopping-cart-item" key={item.id}>
-                            <p>{item.name}</p>
-                            <p>{item.quantity}</p>
-                            <p>{item.price}</p>
+                            <p className='shopping-cart-item-name'>{item.name}</p>
+                            <p className='shopping-cart-item-quantity'>{item.quantity}</p>
+                            <p className='shopping-cart-item-price'>{item.price}</p>
                             <button 
                             aria-label='delete-shopping-cart-item'
                             onClick={() => {onDeleteItem(item)}}>
@@ -26,7 +26,7 @@ const ShoppingCart = (props) => {
                     )
                 })}
                 {(cartItems && cartItems.length) > 0 ?
-                    <p className='shopping-cart-sum'>Sum: {cartItems.reduce((prev, curr) => prev + (curr.quantity * curr.price), 0)}</p>
+                    <p className='shopping-cart-sum'>Total amount: <span className='shopping-cart-sum-amount'>{cartItems.reduce((prev, curr) => prev + (curr.quantity * curr.price), 0)}</span></p>
                     :
                     <p className='shopping-cart-empty-message'>You haven't added any items to the shopping cart.</p>
                 }
