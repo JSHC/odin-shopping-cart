@@ -5,7 +5,8 @@ import ShoppingCart from './ShoppingCart';
 
 describe('ShoppingCart component', () => {
     it('renders', () => {
-        const { container } = render(<ShoppingCart />);
+        const cartItems = [];
+        const { container } = render(<ShoppingCart cartItems={cartItems} />);
         expect(container).toMatchSnapshot();
     }) 
 
@@ -50,5 +51,11 @@ describe('ShoppingCart component', () => {
         ]
         render(<ShoppingCart cartItems={cartItems}/>)
         screen.getByText('Sum: 70');
+    })
+
+    it ('renders message when shopping cart is empty', () => {
+        const cartItems = [];
+        render(<ShoppingCart cartItems={cartItems} />);
+        screen.getByText("You haven't added any items to the shopping cart.")
     })
 })
