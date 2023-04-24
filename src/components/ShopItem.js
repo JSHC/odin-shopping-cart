@@ -48,7 +48,10 @@ const ShopItem = (props) => {
                 />
                 <button onClick={increaseQuantity} aria-label="increase-quantity">+</button>
                 <button 
-                onClick={() => {props.onAddToCart({id, name, price, quantity})}}
+                onClick={() => {
+                    props.onAddToCart({id, name, price, quantity})
+                    setQuantity(0);
+                }}
                 className="add-to-cart-button">
                     Add to Cart
                 </button>
