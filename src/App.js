@@ -35,7 +35,7 @@ function App() {
         <div className='main-content'>
         <Routes>
           <Route path='/' element={<Home onAddToCart={onAddToCart} />}/>
-          <Route path='shopping-cart' element={<ShoppingCart cartItems={cartItems}/>}/>
+          <Route path='shopping-cart' element={<ShoppingCart cartItems={cartItems} onDeleteItem={removeItemFromCart}/>}/>
         </Routes>
         </div>
       </BrowserRouter>
