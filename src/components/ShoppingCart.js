@@ -5,7 +5,7 @@ const ShoppingCart = (props) => {
     return (
         <div>
             <h1>Shopping Cart</h1>
-            {cartItems && cartItems.length > 0 ? 
+
             <div className='shopping-cart-item-header'>
                 <p>Product</p>
                 <p>Quantity</p>
@@ -20,10 +20,13 @@ const ShoppingCart = (props) => {
                         </div>
                     )
                 })}
-                <p className='shopping-cart-sum'>Sum: {cartItems.reduce((prev, curr) => prev + (curr.quantity * curr.price), 0)}</p>
+                {(cartItems && cartItems.length) > 0 ?
+                    <p className='shopping-cart-sum'>Sum: {cartItems.reduce((prev, curr) => prev + (curr.quantity * curr.price), 0)}</p>
+                    :
+                    <p className='shopping-cart-empty-message'>You haven't added any items to the shopping cart.</p>
+                }
+                
             </div>
-            : null
-            }
             
         </div>
     );
