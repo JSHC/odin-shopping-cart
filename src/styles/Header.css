@@ -6,8 +6,12 @@
 
 .header nav ul {
     list-style: none;
-    display: flex;
-    justify-content: space-around;
+
+}
+
+.header-nav-list {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
 }
 
@@ -18,6 +22,11 @@
 
 .header-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     gap: 2rem;
+}
+
+.header-logo {
+    font-weight: 700;
+    font-size: 1.5rem;
 }
