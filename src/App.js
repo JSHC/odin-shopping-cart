@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
 import ShoppingCart from './components/ShoppingCart';
+import Shop from './components/Shop';
 import { useState } from 'react';
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <div className='main-content'>
         <Routes>
           <Route path='/' element={<Home onAddToCart={onAddToCart} />}/>
+          <Route path='/shop' element={<Shop onAddToCart={onAddToCart} />}/>
           <Route path='shopping-cart' element={<ShoppingCart cartItems={cartItems} onDeleteItem={removeItemFromCart}/>}/>
         </Routes>
         </div>
