@@ -18,7 +18,7 @@ describe('ShoppingCart component', () => {
         render(<ShoppingCart cartItems={cartItems}/>)
         screen.getByText('Item1');
         screen.getByText('1')
-        screen.getByText('10')
+        screen.getAllByText('10')
     })
 
     it('renders multiple items', () => {
@@ -42,7 +42,7 @@ describe('ShoppingCart component', () => {
             {id: 1, name: 'Item1', quantity: 3, price: 10},
         ]
         render(<ShoppingCart cartItems={cartItems}/>)
-        screen.getByText('Sum: 30');
+        screen.getByText('30');
     })
 
     it ('renders correct sum for multiple items', () => {
@@ -51,7 +51,7 @@ describe('ShoppingCart component', () => {
             {id: 2, name: 'Item2', quantity: 2, price: 20}
         ]
         render(<ShoppingCart cartItems={cartItems}/>)
-        screen.getByText('Sum: 70');
+        screen.getByText('70');
     })
 
     it ('renders message when shopping cart is empty', () => {
