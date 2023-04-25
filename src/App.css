@@ -10,5 +10,6 @@
 
 .main-content {
   grid-area: main;
+  margin-top: 2rem;
 }
 
