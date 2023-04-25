@@ -1,4 +1,5 @@
 import ShopItem from "./ShopItem";
+import '../styles/Shop.css';
 
 import image1 from '../images/green-t-shirt.jpg';
 import image2 from '../images/cobalt-blue-t-shirt.jpg'
