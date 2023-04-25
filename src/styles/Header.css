@@ -15,3 +15,9 @@
     color: #fff;
     text-decoration: none;
 }
+
+.header-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}

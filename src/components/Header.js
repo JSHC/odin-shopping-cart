@@ -20,8 +20,10 @@ const Header = (props) => {
         <div className="header">
             <nav>
                 <ul>
-                    <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/shop'>Shop</Link></li>
+                    <ul className='header-links'>
+                        <li><Link to='/'>Home</Link></li>
+                        <li><Link to='/shop'>Shop</Link></li>
+                    </ul>
                     <li><ShoppingCartLink cartItemsNumber={getNumberOfCartItems()}/></li>
                 </ul>
             </nav>
