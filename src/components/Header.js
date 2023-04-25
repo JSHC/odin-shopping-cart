@@ -19,7 +19,8 @@ const Header = (props) => {
     return (
         <div className="header">
             <nav>
-                <ul>
+                <ul className='header-nav-list'>
+                    <li className='header-logo'><Link to='/'>JAFS</Link></li>
                     <ul className='header-links'>
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/shop'>Shop</Link></li>
