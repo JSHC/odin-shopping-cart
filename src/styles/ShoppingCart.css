@@ -24,8 +24,10 @@
 }
 
 .shopping-cart-item-header .shopping-cart-sum {
-    grid-column: 4;
-    margin-top: 20px; 
+    grid-column: 1;
+    grid-row: 1;
+    font-weight: bold;
+    align-self: start;
 }
 
 .shopping-cart-item-header .shopping-cart-empty-message {
@@ -39,3 +41,29 @@
 .shopping-cart-item-price::before, .shopping-cart-sum-amount:before {
     content: "$";
 }
+
+.shopping-cart-bottom {
+    margin-top: 2rem;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+}
+
+.checkout-button {
+    grid-column: 4;
+    justify-self: start;
+    align-self: start;
+    border: 2px solid #000;
+    background-color: #000;
+    color: #FFF;
+    padding: .6rem 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background-color: #FFF;
+    color: #000;
+}
+
