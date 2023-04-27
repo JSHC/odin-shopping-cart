@@ -1,0 +1,6 @@
+.purchase-confirmation {
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+    z-index: 2;
+}
