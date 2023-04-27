@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../styles/ShopItem.css";
+import {FaPlus, FaMinus} from 'react-icons/fa';
 const ShopItem = (props) => {
     const { id, name, price, image } = props;
 
@@ -36,7 +37,9 @@ const ShopItem = (props) => {
             </div>
 
             <div className="shop-item-controls">
-                <button onClick={decreaseQuantity} aria-label="decrease-quantity">-</button>
+                <button onClick={decreaseQuantity} 
+                aria-label="decrease-quantity"
+                className="decrease-quantity"><FaMinus /></button>
                 <input
                     type="text"
                     value={quantity}
@@ -46,7 +49,9 @@ const ShopItem = (props) => {
                     aria-label="quantity"
                     size={1}
                 />
-                <button onClick={increaseQuantity} aria-label="increase-quantity">+</button>
+                <button onClick={increaseQuantity} 
+                aria-label="increase-quantity"
+                className="increase-quantity"><FaPlus /></button>
                 <button 
                 onClick={() => {
                     props.onAddToCart({id, name, price, quantity})
