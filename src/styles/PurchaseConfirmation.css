@@ -1,6 +1,21 @@
 .purchase-confirmation {
-    justify-self: center;
-    align-self: center;
     position: absolute;
     z-index: 2;
+    background-color: #fff;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    padding: 4rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.show {
+    transition: opacity 500ms;
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
 }
