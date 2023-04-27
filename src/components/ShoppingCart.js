@@ -26,7 +26,10 @@ const ShoppingCart = (props) => {
                     )
                 })}
                 {(cartItems && cartItems.length) > 0 ?
-                    <p className='shopping-cart-sum'>Total amount: <span className='shopping-cart-sum-amount'>{cartItems.reduce((prev, curr) => prev + (curr.quantity * curr.price), 0)}</span></p>
+                    <div className='shopping-cart-bottom'>
+                        <button className='checkout-button'>Checkout</button>
+                        <p className='shopping-cart-sum'>Total amount: <span className='shopping-cart-sum-amount'>{cartItems.reduce((prev, curr) => prev + (curr.quantity * curr.price), 0)}</span></p>
+                    </div>
                     :
                     <p className='shopping-cart-empty-message'>You haven't added any items to the shopping cart.</p>
                 }
