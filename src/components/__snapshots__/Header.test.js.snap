@@ -6,14 +6,36 @@ exports[`Header component renders 1`] = `
     class="header"
   >
     <nav>
-      <ul>
-        <li>
+      <ul
+        class="header-nav-list"
+      >
+        <li
+          class="header-logo"
+        >
           <a
             href="/"
           >
-            Home
+            JAFS
           </a>
         </li>
+        <ul
+          class="header-links"
+        >
+          <li>
+            <a
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="/shop"
+            >
+              Shop
+            </a>
+          </li>
+        </ul>
         <li>
           <div
             class="shopping-cart-link-container"

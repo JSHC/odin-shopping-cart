@@ -5,106 +5,17 @@ exports[`Home component renders 1`] = `
   <div
     class="home-container"
   >
-    <h1>
-      Home
-    </h1>
     <div
-      class="shop-items-container"
+      class="home-content"
     >
-      <div
-        class="shop-item"
+      <h1>
+        JUST ANOTHER FAKE STORE
+      </h1>
+      <a
+        href="/shop"
       >
-        <div
-          class="shop-item-image"
-          style="background-image: url(https://images.unsplash.com/photo-1608256246200-53e635b5b65f);"
-        />
-        <div
-          class="shop-item-details"
-        >
-          <p
-            class="shop-item-name"
-          >
-            Item1
-          </p>
-          <p
-            class="shop-item-price"
-          >
-            10
-          </p>
-        </div>
-        <div
-          class="shop-item-controls"
-        >
-          <button
-            aria-label="decrease-quantity"
-          >
-            -
-          </button>
-          <input
-            aria-label="quantity"
-            id="shop-item-quantity"
-            name="shop-item-quantity"
-            size="1"
-            type="text"
-            value="0"
-          />
-          <button
-            aria-label="increase-quantity"
-          >
-            +
-          </button>
-          <button
-            class="add-to-cart-button"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
-      <div
-        class="shop-item"
-      >
-        <div
-          class="shop-item-details"
-        >
-          <p
-            class="shop-item-name"
-          >
-            Item2
-          </p>
-          <p
-            class="shop-item-price"
-          >
-            20
-          </p>
-        </div>
-        <div
-          class="shop-item-controls"
-        >
-          <button
-            aria-label="decrease-quantity"
-          >
-            -
-          </button>
-          <input
-            aria-label="quantity"
-            id="shop-item-quantity"
-            name="shop-item-quantity"
-            size="1"
-            type="text"
-            value="0"
-          />
-          <button
-            aria-label="increase-quantity"
-          >
-            +
-          </button>
-          <button
-            class="add-to-cart-button"
-          >
-            Add to Cart
-          </button>
-        </div>
-      </div>
+        SHOP NOW
+      </a>
     </div>
   </div>
 </div>
