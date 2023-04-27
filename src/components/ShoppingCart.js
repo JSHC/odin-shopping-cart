@@ -1,4 +1,5 @@
 import '../styles/ShoppingCart.css';
+import { FaTrash } from 'react-icons/fa';
 
 const ShoppingCart = (props) => {
     const {cartItems, onDeleteItem} = props;
@@ -18,9 +19,10 @@ const ShoppingCart = (props) => {
                             <p className='shopping-cart-item-quantity'>{item.quantity}</p>
                             <p className='shopping-cart-item-price'>{item.price}</p>
                             <button 
+                            className='delete-shopping-cart-item'
                             aria-label='delete-shopping-cart-item'
                             onClick={() => {onDeleteItem(item)}}>
-                            X
+                            <FaTrash />
                             </button>
                         </div>
                     )
