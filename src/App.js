@@ -29,6 +29,14 @@ function App() {
     setCartItems([...cartItems.filter(x => x.id !== item.id)]);
   }
 
+  const clearCart = () => {
+    setCartItems([]);
+  }
+
+  const onPurchaseConfirmClose = () => {
+    clearCart();
+  }
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -37,7 +45,12 @@ function App() {
         <Routes>
           <Route path='/' element={<Home onAddToCart={onAddToCart} />}/>
           <Route path='/shop' element={<Shop onAddToCart={onAddToCart} />}/>
-          <Route path='shopping-cart' element={<ShoppingCart cartItems={cartItems} onDeleteItem={removeItemFromCart}/>}/>
+          <Route path='shopping-cart' 
+            element={<ShoppingCart 
+            cartItems={cartItems} 
+            onDeleteItem={removeItemFromCart}
+            onPurchaseConfirmClose={onPurchaseConfirmClose}
+            />}/>
         </Routes>
         </div>
       </BrowserRouter>
