@@ -1,3 +1,7 @@
+.shopping-cart {
+    display: grid;
+}
+
 .shopping-cart-item {
     display: grid;
     grid-column: span 4;
