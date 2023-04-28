@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Header {...{cartItems}}/>
         <div className='main-content'>
         <Routes>
@@ -53,7 +53,7 @@ function App() {
             />}/>
         </Routes>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
