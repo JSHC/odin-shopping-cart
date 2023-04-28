@@ -2,7 +2,9 @@
 
 exports[`ShoppingCart component renders 1`] = `
 <div>
-  <div>
+  <div
+    class="shopping-cart"
+  >
     <h1>
       Shopping Cart
     </h1>

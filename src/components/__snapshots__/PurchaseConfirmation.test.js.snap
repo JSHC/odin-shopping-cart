@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PurchaseConfirmation component renders 1`] = `
+<div>
+  <div
+    class="purchase-confirmation show"
+  >
+    <h1>
+      Thank you for your purchase!
+    </h1>
+    <button
+      aria-label="close-purchase-confirmation"
+    >
+      CLOSE
+    </button>
+  </div>
+</div>
+`;
