@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../styles/ShopItem.css";
-import {FaPlus, FaMinus} from 'react-icons/fa';
+import { FaPlus, FaMinus } from "react-icons/fa";
 const ShopItem = (props) => {
     const { id, name, price, image } = props;
 
@@ -27,19 +27,25 @@ const ShopItem = (props) => {
     };
     return (
         <div className="shop-item">
-            {image && 
-            <div className="shop-item-image" style={{backgroundImage: `url(${image})`}}>
-            </div>
-            }
+            {image && (
+                <div
+                    className="shop-item-image"
+                    style={{ backgroundImage: `url(${image})` }}
+                ></div>
+            )}
             <div className="shop-item-details">
-            <p className="shop-item-name">{name}</p>
-            <p className="shop-item-price">{price}</p>
+                <p className="shop-item-name">{name}</p>
+                <p className="shop-item-price">{price}</p>
             </div>
 
             <div className="shop-item-controls">
-                <button onClick={decreaseQuantity} 
-                aria-label="decrease-quantity"
-                className="decrease-quantity"><FaMinus /></button>
+                <button
+                    onClick={decreaseQuantity}
+                    aria-label="decrease-quantity"
+                    className="decrease-quantity"
+                >
+                    <FaMinus />
+                </button>
                 <input
                     type="text"
                     value={quantity}
@@ -49,15 +55,20 @@ const ShopItem = (props) => {
                     aria-label="quantity"
                     size={1}
                 />
-                <button onClick={increaseQuantity} 
-                aria-label="increase-quantity"
-                className="increase-quantity"><FaPlus /></button>
-                <button 
-                onClick={() => {
-                    props.onAddToCart({id, name, price, quantity})
-                    setQuantity(0);
-                }}
-                className="add-to-cart-button">
+                <button
+                    onClick={increaseQuantity}
+                    aria-label="increase-quantity"
+                    className="increase-quantity"
+                >
+                    <FaPlus />
+                </button>
+                <button
+                    onClick={() => {
+                        props.onAddToCart({ id, name, price, quantity });
+                        setQuantity(0);
+                    }}
+                    className="add-to-cart-button"
+                >
                     Add to Cart
                 </button>
             </div>

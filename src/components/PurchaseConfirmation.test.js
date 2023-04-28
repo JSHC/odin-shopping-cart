@@ -56,7 +56,7 @@ describe("PurchaseConfirmation component", () => {
         render(
             <MemoryRouter>
                 <div data-testid="wrapper">
-                <PurchaseConfirmation onClose={mockCloseFn} />
+                    <PurchaseConfirmation onClose={mockCloseFn} />
                 </div>
             </MemoryRouter>
         );
@@ -67,5 +67,5 @@ describe("PurchaseConfirmation component", () => {
         const wrapper = screen.getByTestId("wrapper");
         await user.click(wrapper);
         expect(mockCloseFn).toBeCalled();
-    })
+    });
 });

@@ -8,20 +8,21 @@ const PurchaseConfirmation = (props) => {
         if (!ref.current.contains(event.target)) {
             props.onClose();
         }
-    }
+    };
     useEffect(() => {
         setAnimate(true);
 
-        document.addEventListener('click', onClickOutside, true);
+        document.addEventListener("click", onClickOutside, true);
         return () => {
-            document.removeEventListener('click', onClickOutside, true);
-        }
+            document.removeEventListener("click", onClickOutside, true);
+        };
     });
 
-
-
     return (
-        <div ref={ref} className={`purchase-confirmation ${animate ? "show" : "hidden"}`}>
+        <div
+            ref={ref}
+            className={`purchase-confirmation ${animate ? "show" : "hidden"}`}
+        >
             <h1>Thank you for your purchase!</h1>
             <button
                 onClick={props.onClose}
