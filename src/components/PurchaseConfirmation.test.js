@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { getByTestId, render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import PurchaseConfirmation from "./PurchaseConfirmation";
 import { MemoryRouter } from "react-router-dom";
@@ -49,4 +49,23 @@ describe("PurchaseConfirmation component", () => {
         await user.click(closeButton);
         expect(mockCloseFn).toBeCalled();
     });
+
+    it("calls close function when clicking outside", async () => {
+        const user = userEvent.setup();
+        const mockCloseFn = jest.fn();
+        render(
+            <MemoryRouter>
+                <div data-testid="wrapper">
+                <PurchaseConfirmation onClose={mockCloseFn} />
+                </div>
+            </MemoryRouter>
+        );
+        const closeButton = screen.getByRole("button", {
+            name: "close-purchase-confirmation",
+        });
+
+        const wrapper = screen.getByTestId("wrapper");
+        await user.click(wrapper);
+        expect(mockCloseFn).toBeCalled();
+    })
 });
