@@ -69,7 +69,7 @@ const ShopItem = (props) => {
                     }}
                     className="add-to-cart-button"
                 >
-                    Add to Cart
+                    ADD TO CART
                 </button>
             </div>
         </div>
