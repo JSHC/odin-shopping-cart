@@ -55,7 +55,7 @@ const ShoppingCart = (props) => {
                             className="checkout-button"
                             onClick={() => setShowPurchaseConfirm(true)}
                         >
-                            Checkout
+                            CHECKOUT
                         </button>
                         <p className="shopping-cart-sum">
                             Total amount:{" "}
