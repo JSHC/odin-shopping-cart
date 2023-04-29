@@ -16,6 +16,12 @@
     background-size: cover;
     background-position: center center;
     background-clip: content-box;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    cursor: default;
+    user-select: none;
+    font-weight: 700;
 }
 
 .shop-item-details {
