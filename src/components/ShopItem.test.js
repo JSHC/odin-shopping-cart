@@ -91,7 +91,7 @@ describe("ShopItem component", () => {
         const addToCartMock = jest.fn();
         render(<ShopItem {...item1} onAddToCart={addToCartMock} />);
         const addToCartButton = screen.getByRole("button", {
-            name: "Add to Cart",
+            name: /add to cart/i,
         });
         await user.click(addToCartButton);
         expect(addToCartMock).toBeCalled();
