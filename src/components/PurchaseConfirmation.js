@@ -26,6 +26,7 @@ const PurchaseConfirmation = (props) => {
             <h1>Thank you for your purchase!</h1>
             <button
                 onClick={props.onClose}
+                className="close-purchase-confirmation"
                 aria-label="close-purchase-confirmation"
             >
                 CLOSE
