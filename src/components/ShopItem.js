@@ -1,10 +1,22 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "../styles/ShopItem.css";
 import { FaPlus, FaMinus } from "react-icons/fa";
 const ShopItem = (props) => {
     const { id, name, price, image } = props;
 
     const [quantity, setQuantity] = useState(0);
+    const [imageLoaded, setImageLoaded] = useState(false);
+    const imageDiv = useRef(null);
+
+    useEffect(() => {
+        const tempImage = new Image();
+        tempImage.src = image;
+
+        tempImage.onload = () => {
+            imageDiv.current.style.backgroundImage = `url(${tempImage.src})`;
+            setImageLoaded(true);
+        }
+    })
 
     const increaseQuantity = () => {
         setQuantity((quantity) => parseInt(quantity + 1));
@@ -30,8 +42,8 @@ const ShopItem = (props) => {
             {image && (
                 <div
                     className="shop-item-image"
-                    style={{ backgroundImage: `url(${image})` }}
-                ></div>
+                    ref={imageDiv}
+                >{!imageLoaded ? 'Loading...' : ''}</div>
             )}
             <div className="shop-item-details">
                 <p className="shop-item-name">{name}</p>
