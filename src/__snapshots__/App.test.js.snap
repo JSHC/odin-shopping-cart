@@ -16,7 +16,7 @@ exports[`App component renders 1`] = `
             class="header-logo"
           >
             <a
-              href="/"
+              href="#/"
             >
               JAFS
             </a>
@@ -26,14 +26,14 @@ exports[`App component renders 1`] = `
           >
             <li>
               <a
-                href="/"
+                href="#/"
               >
                 Home
               </a>
             </li>
             <li>
               <a
-                href="/shop"
+                href="#/shop"
               >
                 Shop
               </a>
@@ -49,7 +49,7 @@ exports[`App component renders 1`] = `
                 0
               </div>
               <a
-                href="/shopping-cart"
+                href="#/shopping-cart"
               >
                 <svg
                   fill="currentColor"
@@ -83,7 +83,7 @@ exports[`App component renders 1`] = `
             JUST ANOTHER FAKE STORE
           </h1>
           <a
-            href="/shop"
+            href="#/shop"
           >
             SHOP NOW
           </a>

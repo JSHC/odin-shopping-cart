@@ -10,6 +10,7 @@ exports[`PurchaseConfirmation component renders 1`] = `
     </h1>
     <button
       aria-label="close-purchase-confirmation"
+      class="close-purchase-confirmation"
     >
       CLOSE
     </button>
