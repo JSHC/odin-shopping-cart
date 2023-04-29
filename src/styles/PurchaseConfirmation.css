@@ -9,6 +9,7 @@
     align-self: center;
     padding: 4rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 4rem;
 }
 
 .show {
@@ -18,4 +19,23 @@
 
 .hidden {
     opacity: 0;
+}
+
+.close-purchase-confirmation {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border: 2px solid #000;
+    background-color: #000;
+    color: #FFF;
+    padding: 1rem 2.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.close-purchase-confirmation:hover {
+    background-color: #FFF;
+    color: #000;
 }
