@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/odin-shopping-cart/static/css/main.0ab8f422.css",
-    "main.js": "/odin-shopping-cart/static/js/main.115eecfb.js",
+    "main.css": "/odin-shopping-cart/static/css/main.9ba37603.css",
+    "main.js": "/odin-shopping-cart/static/js/main.50405bda.js",
     "static/media/cobalt-blue-t-shirt.jpg": "/odin-shopping-cart/static/media/cobalt-blue-t-shirt.059a578c014c6cadfdbc.jpg",
     "static/media/purple-t-shirt.jpg": "/odin-shopping-cart/static/media/purple-t-shirt.b50d118f7ce5ad883396.jpg",
     "static/media/green-t-shirt.jpg": "/odin-shopping-cart/static/media/green-t-shirt.25bcbab5b27ccffbc168.jpg",
@@ -11,11 +11,11 @@
     "static/media/street-wear-navy-jacket.jpg": "/odin-shopping-cart/static/media/street-wear-navy-jacket.b22146e1d64c9e0d0e18.jpg",
     "static/media/pair-of-navy-blue-skate-shoes.jpg": "/odin-shopping-cart/static/media/pair-of-navy-blue-skate-shoes.38588bb660c4615ea4a3.jpg",
     "index.html": "/odin-shopping-cart/index.html",
-    "main.0ab8f422.css.map": "/odin-shopping-cart/static/css/main.0ab8f422.css.map",
-    "main.115eecfb.js.map": "/odin-shopping-cart/static/js/main.115eecfb.js.map"
+    "main.9ba37603.css.map": "/odin-shopping-cart/static/css/main.9ba37603.css.map",
+    "main.50405bda.js.map": "/odin-shopping-cart/static/js/main.50405bda.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ab8f422.css",
-    "static/js/main.115eecfb.js"
+    "static/css/main.9ba37603.css",
+    "static/js/main.50405bda.js"
   ]
 }
